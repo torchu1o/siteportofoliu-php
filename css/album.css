@@ -1,0 +1,138 @@
+/* Album Details Styles */
+
+/* Album Info */
+.album-info {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.album-category {
+    margin-bottom: 1rem;
+}
+
+.album-category a {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.album-description {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Photo Gallery */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 4rem 0;
+    background-color: var(--light-color);
+    border-radius: 8px;
+}
+
+.back-to-portfolio {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Related Albums */
+.related-albums {
+    background-color: var(--light-color);
+}
+
+.portfolio-preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 992px) {
+    .photo-gallery,
+    .portfolio-preview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-item img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .photo-gallery,
+    .portfolio-preview {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-item img {
+        height: auto;
+    }
+}
+
+/* Light Gallery Custom Styles */
+.lg-backdrop {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lg-toolbar,
+.lg-outer .lg-thumb-outer {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.lg-toolbar .lg-icon,
+.lg-actions .lg-next, 
+.lg-actions .lg-prev {
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+
+.lg-toolbar .lg-icon:hover,
+.lg-actions .lg-next:hover, 
+.lg-actions .lg-prev:hover {
+    color: white;
+    border-color: white;
+}
+
+.lg-outer .lg-thumb-item.active, 
+.lg-outer .lg-thumb-item:hover {
+    border-color: var(--primary-color);
+} 
