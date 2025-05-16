@@ -24,7 +24,6 @@
                             <li><a href="/despre.php">Despre mine</a></li>
                             <li><a href="/portofoliu.php">Portofoliu</a></li>
                             <li><a href="/testimoniale.php">Testimoniale</a></li>
-                            <li><a href="/blog.php">Blog</a></li>
                             <li><a href="/contact.php">Contact</a></li>
                         </ul>
                     </div>
@@ -32,13 +31,13 @@
                     <div class="footer-social">
                         <h3>Social</h3>
                         <div class="social-links">
-                            <a href="https://facebook.com" target="_blank" class="facebook">
+                            <a href="https://www.facebook.com/tudor.torcica.7/" target="_blank" class="facebook">
                                 <img src="/assets/icons/facebook.svg" alt="Facebook">
                             </a>
-                            <a href="https://instagram.com" target="_blank" class="instagram">
+                            <a href="https://www.instagram.com/torchu_ph/" target="_blank" class="instagram">
                                 <img src="/assets/icons/instagram.svg" alt="Instagram">
                             </a>
-                            <a href="https://wa.me/<?php echo str_replace(' ', '', $site_phone); ?>" class="whatsapp">
+                            <a href="https://wa.me/+40741940601" class="whatsapp">
                                 <img src="/assets/icons/whatsapp.svg" alt="WhatsApp">
                             </a>
                         </div>
@@ -52,7 +51,7 @@
         </div>
         
         <!-- WhatsApp floating button -->
-        <a href="https://wa.me/<?php echo str_replace(' ', '', $site_phone); ?>" class="whatsapp-float">
+        <a href="https://wa.me/+40741940601" class="whatsapp-float" aria-label="Chat on WhatsApp">
             <img src="/assets/icons/whatsapp.svg" alt="WhatsApp">
             <span>Scrie-mi pe WhatsApp!</span>
         </a>

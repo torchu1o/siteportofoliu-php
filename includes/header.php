@@ -41,13 +41,13 @@ $current_page = basename($_SERVER['SCRIPT_NAME'], '.php');
                     </span>
                 </div>
                 <div class="social-icons">
-                    <a href="https://facebook.com" target="_blank" class="facebook">
+                    <a href="https://www.facebook.com/tudor.torcica.7/" target="_blank" class="facebook">
                         <img src="/assets/icons/facebook.svg" alt="Facebook">
                     </a>
-                    <a href="https://instagram.com" target="_blank" class="instagram">
+                    <a href="https://www.instagram.com/torchu_ph/" target="_blank" class="instagram">
                         <img src="/assets/icons/instagram.svg" alt="Instagram">
                     </a>
-                    <a href="https://wa.me/<?php echo str_replace(' ', '', $site_phone); ?>" class="whatsapp">
+                    <a href="https://wa.me/+40741940601" class="whatsapp">
                         <img src="/assets/icons/whatsapp.svg" alt="WhatsApp">
                     </a>
                 </div>
@@ -80,9 +80,6 @@ $current_page = basename($_SERVER['SCRIPT_NAME'], '.php');
                         </li>
                         <li<?php echo $current_page == 'testimoniale' ? ' class="active"' : ''; ?>>
                             <a href="/testimoniale.php">TESTIMONIALE</a>
-                        </li>
-                        <li<?php echo $current_page == 'blog' ? ' class="active"' : ''; ?>>
-                            <a href="/blog.php">BLOG</a>
                         </li>
                         <li<?php echo $current_page == 'contact' ? ' class="active"' : ''; ?>>
                             <a href="/contact.php">CONTACT</a>
