@@ -75,21 +75,21 @@ $featured_albums = $stmt->fetchAll();
         
         <div class="service-cards">
             <div class="service-card">
-                <img src="/assets/icons/wedding.svg" alt="Nuntă" class="service-icon">
+                <img src="/assets/images/wedding.jpg" alt="Nuntă" class="service-icon">
                 <h3>Fotografie de Nuntă</h3>
                 <p>Captez toate momentele speciale din ziua nunții voastre, de la primele pregătiri până la ultimul dans.</p>
             </div>
             
             <div class="service-card">
-                <img src="/assets/icons/couple.svg" alt="Cununie" class="service-icon">
+                <img src="/assets/images/couple.jpg" alt="Cununie" class="service-icon">
                 <h3>Fotografie de Cununie</h3>
                 <p>Imortalizez ceremonia religioasă cu respect și discreție, capturând emoțiile și tradițiile importante.</p>
             </div>
             
             <div class="service-card">
-                <img src="/assets/icons/dress.svg" alt="Trash The Dress" class="service-icon">
-                <h3>Trash The Dress</h3>
-                <p>Ședințe foto creative după nuntă, într-un stil nonconformist, pentru amintiri cu adevărat unice.</p>
+                <img src="/assets/images/majorate.jpg" alt="Majorat" class="service-icon">
+                <h3>Majorate</h3>
+                <p>Ședințe foto creative de majorat , într-un stil nonconformist, pentru amintiri cu adevărat unice.</p>
             </div>
         </div>
     </div>

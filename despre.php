@@ -26,7 +26,7 @@ include 'includes/header.php';
             <div class="story-text">
                 <p>Cu o cameră în mână și o pasiune în inimă, sunt dedicat capturării momentelor care aduc bucurie, emoție și frumusețe în viața fiecărei persoane. Fie că este vorba de nunți, petreceri sau alte evenimente speciale, îmi propun să surprind autenticitatea și magia fiecărui moment. Sunt onorat să fiu martorul și povestitorul fiecărei călătorii unice.</p>
                 
-                <p>Toată această călătorie pentru mine a început când eram clasa a 9-a la liceu. Dintr-o curiozitate am început să fotografiez. O să fiu sincer cu voi și o să vă mărturisesc că la început am fost mânat de atracția pe care o aveam la fete în perioada respectivă, va puteți da și voi seama că toate fetele își doreau poze și fiind la vârsta la care euforia atenției câtorva fete superbe își puneau amprenta, am început să continui.</p>
+                <p>Totul a început la 18 ani, când mama mea mi-a făcut unul dintre cele mai prețioase cadouri: un aparat foto Canon 1300D. Știa cât de mult iubeam fotografia, chiar dacă până atunci fusese doar o pasiune tăcută. Acel gest simplu, dar profund, a aprins în mine un foc care nu s-a mai stins. Am început să învăț, să experimentez, să investesc treptat în obiective și echipamente. Astăzi, privesc cu recunoștință înapoi, de fiecare dată când ridic aparatul profesional cu care surprind cele mai frumoase momente la nunți. Pentru mine, fiecare fotografie are o poveste, iar povestea mea a început cu dragostea mamei și un vis transformat în realitate.</p>
             </div>
             
             <div class="story-image">
@@ -49,7 +49,7 @@ include 'includes/header.php';
             </div>
             
             <div class="vision-text">
-                <p>Nu târziu am descoperit că îmi place enorm de mult și chiar mă pricep așa că la scurt timp au început să apară și evenimentele. De la majorate și evenimente culturale publice am ajuns să colaborez cu diverse firme organizatoare de evenimente și destul de rapid am intrat în lumea nunților unde am. Aici am regăsit din nou euforia pe care eu o simțisem, la cuplurile îndrăgostite care mă angajau special pentru a captura cele mai importante momente din ziua lor specială.</p>
+                <p>Nu târziu am descoperit că îmi place enorm de mult și chiar mă pricep așa că la scurt timp au început să apară și evenimentele. De la majorate și evenimente culturale publice am ajuns să colaborez cu diverse firme organizatoare de evenimente și destul de rapid am intrat în lumea nunților unde am regăsit din nou euforia pe care eu o simțisem, la cuplurile îndrăgostite care mă angajau special pentru a captura cele mai importante momente din ziua lor specială.</p>
                 
                 <p>Fiecare proiect pe care îl abordez este unic, la fel ca și clienții mei. Mă dedic întotdeauna să înțeleg viziunea și dorințele fiecărui client, adaptându-mi stilul pentru a reflecta personalitatea și povestea lor. Cred cu tărie că cele mai bune fotografii sunt cele care captează emoțiile autentice și momentele sincere.</p>
             </div>
