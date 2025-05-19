@@ -16,12 +16,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
         $title = sanitize($_POST['title']);
         $description = sanitize($_POST['description']);
         $category_id = (int)$_POST['category_id'];
-        
+
+        // Generează slug unic
+        $slug = strtolower(preg_replace('/[^a-z0-9]+/i', '-', trim($title)));
+        $slug = trim($slug, '-');
+
+        // Verifică dacă slug-ul există deja
+        $stmt = $db->prepare("SELECT COUNT(*) FROM albums WHERE slug = ?");
+        $stmt->execute([$slug]);
+        $count = $stmt->fetchColumn();
+        if ($count > 0) {
+            $slug .= '-' . uniqid();
+        }
+
         if (empty($title)) {
             $error = 'Titlul albumului este obligatoriu.';
         } else {
-            $stmt = $db->prepare("INSERT INTO albums (title, description, category_id) VALUES (?, ?, ?)");
-            if ($stmt->execute([$title, $description, $category_id])) {
+            $stmt = $db->prepare("INSERT INTO albums (title, description, category_id, slug) VALUES (?, ?, ?, ?)");
+            if ($stmt->execute([$title, $description, $category_id, $slug])) {
                 $message = 'Albumul a fost creat cu succes.';
             } else {
                 $error = 'A apărut o eroare la crearea albumului.';
@@ -149,4 +161,4 @@ window.onclick = function(event) {
 }
 </script>
 
-<?php include 'includes/footer.php'; ?> 
+<?php include 'includes/footer.php'; ?>

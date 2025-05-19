@@ -115,7 +115,9 @@ include 'includes/header.php';
                     <img src="../<?php echo $photo['file_path']; ?>" alt="<?php echo $photo['original_name']; ?>">
                 </div>
                 <div class="photo-info">
-                    <p class="photo-name"><?php echo $photo['original_name']; ?></p>
+                    <p class="photo-name">
+                        <?php echo isset($photo['original_name']) ? htmlspecialchars($photo['original_name']) : ''; ?>
+                    </p>
                     <div class="photo-actions">
                         <button class="btn btn-sm btn-danger" onclick="deletePhoto(<?php echo $photo['id']; ?>)">Șterge</button>
                     </div>
@@ -142,4 +144,4 @@ function deletePhoto(photoId) {
 }
 </script>
 
-<?php include 'includes/footer.php'; ?> 
+<?php include 'includes/footer.php'; ?>

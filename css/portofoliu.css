@@ -146,3 +146,13 @@
         grid-template-columns: 1fr;
     }
 } 
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+}
+@media (max-width: 600px) {
+    .photo-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}

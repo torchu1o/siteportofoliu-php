@@ -63,6 +63,7 @@
     <!-- Page-specific JS -->
     <?php if (file_exists("js/{$current_page}.js")): ?>
     <script src="/js/<?php echo $current_page; ?>.js"></script>
+    <script src="/js/lightbox.js"></script>
     <?php endif; ?>
 </body>
 </html> 

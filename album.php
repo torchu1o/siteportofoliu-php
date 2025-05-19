@@ -21,7 +21,7 @@ if (!$album) {
 }
 
 // Get album photos
-$stmt = $db->prepare("SELECT * FROM photos WHERE album_id = ? ORDER BY display_order, created_at");
+$stmt = $db->prepare("SELECT * FROM photos WHERE album_id = ? ORDER BY created_at ASC");
 $stmt->execute([$album['id']]);
 $photos = $stmt->fetchAll();
 
@@ -70,8 +70,8 @@ include 'includes/header.php';
             <?php if (count($photos) > 0): ?>
                 <?php foreach ($photos as $photo): ?>
                     <div class="gallery-item">
-                        <a href="/uploads/<?php echo $photo['filename']; ?>" class="lightbox" data-caption="<?php echo htmlspecialchars($photo['title']); ?>">
-                            <img src="/uploads/<?php echo $photo['filename']; ?>" alt="<?php echo htmlspecialchars($photo['title']); ?>" loading="lazy">
+                        <a href="/<?php echo htmlspecialchars($photo['file_path']); ?>" class="lightbox" data-caption="<?php echo htmlspecialchars($photo['title']); ?>">
+                            <img src="/<?php echo htmlspecialchars($photo['file_path']); ?>" alt="<?php echo htmlspecialchars($photo['title']); ?>" loading="lazy">
                         </a>
                     </div>
                 <?php endforeach; ?>
@@ -164,7 +164,27 @@ include 'includes/header.php';
 </section>
 
 <!-- Light Gallery initialization -->
+ <div class="photo-gallery" id="lightgallery">
+    <?php foreach ($photos as $photo): ?>
+        <a href="/<?php echo htmlspecialchars($photo['file_path']); ?>" class="lightbox" data-caption="<?php echo htmlspecialchars($photo['title']); ?>">
+            <img src="/<?php echo htmlspecialchars($photo['file_path']); ?>" alt="<?php echo htmlspecialchars($photo['title']); ?>" loading="lazy">
+        </a>
+    <?php endforeach; ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
-
-<?php include 'includes/footer.php'; ?> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        lightGallery(document.getElementById('lightgallery'), {
+            plugins: [lgThumbnail, lgZoom],
+            speed: 500,
+            thumbnail: true,
+            zoom: true,
+            selector: '.lightbox'
+        });
+    });
+    </div>
+<?php include 'includes/footer.php'; ?>
