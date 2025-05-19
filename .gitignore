@@ -2,4 +2,3 @@
 .DS_Store
 uploads/*
 !uploads/.gitkeep
-database.sqlite 
